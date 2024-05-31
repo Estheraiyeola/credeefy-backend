@@ -6,7 +6,7 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class AuthenticatedUserResponse {
+public class AuthenticatedEntityResponse {
     private AuthenticationData data;
     private String message;
 }

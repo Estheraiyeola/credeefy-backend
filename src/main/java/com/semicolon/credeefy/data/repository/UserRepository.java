@@ -1,4 +1,8 @@
 package com.semicolon.credeefy.data.repository;
 
-public interface UserRepository {
+import com.semicolon.credeefy.data.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+    User findUserByEmail(String email);
 }
